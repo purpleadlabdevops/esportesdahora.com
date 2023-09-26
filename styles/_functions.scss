@@ -1,0 +1,26 @@
+$width: 1200;
+$width-px: ($width)+px;
+
+@function vw($px-vw, $base-vw: $width-px){
+  @return calc(($px-vw * 100vw) / $base-vw);
+}
+
+@function cqi($fz){
+  @return calc($fz / $width * 100cqi);
+}
+
+@function px($px){
+  @return $px + px;
+}
+
+@function res($min, $max){
+  @return clamp(px($min), cqi($max), px($max));
+}
+
+@function resn($min, $max){
+  @return clamp($min, cqi($max), $max);
+}
+
+@function per($num){
+  @return calc($num / $width * 100% );
+}
