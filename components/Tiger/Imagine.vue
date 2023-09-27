@@ -15,7 +15,6 @@
         <a href="https://track.esportesdahora.com/click" class="btn">QUERO PARTICIPAR →</a>
       </div>
       <div class="imagine__right">
-        <!-- <img class="imagine__img" src="@/assets/imagine-svg-blue.png" alt=""> -->
         <img class="imagine__svg" src="@/assets/imagine-img-blue.png" alt="">
         <img class="imagine__gif" src="@/assets/imagine.gif" alt="">
       </div>

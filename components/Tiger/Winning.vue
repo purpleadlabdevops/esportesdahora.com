@@ -10,11 +10,11 @@
           </div>
           <div class="winning__item">
             <img src="@/assets/winn-blue-2.png" alt="">
-            <span>R$1.245</span>
+            <span>R$3.600</span>
           </div>
           <div class="winning__item">
             <img src="@/assets/winn-blue-3.png" alt="">
-            <span>R$1.640</span>
+            <span>R$1.245</span>
           </div>
         </vue-tiny-slider>
         <button id="winning_prev" class="tns__btn tns__btn-prev"><svg width="34" height="39" viewBox="0 0 34 39" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.83506e-07 19.5001L33.75 38.9857L33.75 0.0145497L9.83506e-07 19.5001Z" fill="#620F0E"/></svg></button>
@@ -27,11 +27,11 @@
         </div>
         <div class="winning__item">
           <img src="@/assets/winn-blue-2.png" alt="">
-          <span>R$1.245</span>
+          <span>R$3.600</span>
         </div>
         <div class="winning__item">
           <img src="@/assets/winn-blue-3.png" alt="">
-          <span>R$1.640</span>
+          <span>R$1.245</span>
         </div>
         <img class="winning__monets" src="@/assets/monets.png" alt="">
       </div>
