@@ -1,20 +1,22 @@
 <template>
-  <div class="layout layout__default">
+  <div class="layout layout__presell">
     <Nuxt />
+    <PresellFooter />
   </div>
 </template>
 
 <script>
 export default{
+  name: 'presell',
   head() {
     return {
       link: [
         { rel: "preconnect", href: "https://fonts.googleapis.com" },
         { rel: "preconnect", href: "https://fonts.gstatic.com", crossorigin: true },
-        { href: "https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700;800;900&display=swap", rel: "stylesheet" },
+        { href: "https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap", rel: "stylesheet" },
       ],
       script: [
-        { src: '/js/fb.js' }
+        { src: '/js/fb_presell.js' }
       ],
     }
   }
@@ -22,5 +24,5 @@ export default{
 </script>
 
 <style lang="scss">
-@import '@/styles/global.scss';
+@import '@/styles/presell.scss';
 </style>

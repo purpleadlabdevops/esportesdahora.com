@@ -1,0 +1,38 @@
+.page__aviator{
+  position: relative;
+  @media(max-width:767px){
+    overflow: hidden;
+  }
+  &:before{
+    content: "";
+    background: url(@/assets/bg-px.jpg) repeat;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 50px;
+    height: 100%;
+    @media(min-width:768px){
+      width: 13.3%;
+    }
+  }
+  .circule{
+    width: res(100, 300);
+    height: res(100, 300);
+    border-radius: 50%;
+    background: var(--red);
+    filter: blur(100px);
+    position: fixed;
+    top: 25%;
+    left: 0;
+    animation: circule 40s infinite;
+    @media(min-width:768px){
+      filter: blur(175px);
+    }
+    &-second{
+      top: 0;
+      left: 0;
+      animation: circuleSecond 35s infinite 5s;
+    }
+  }
+}

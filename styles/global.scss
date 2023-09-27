@@ -1,17 +1,9 @@
 @import '_functions';
+@import '_colors';
 @import '_reset';
 @import '_tiny';
-
-:root {
-  --black: #000;
-  --red: #FE1313;
-  --white: #FFF;
-  --dark-red: #620F0E;
-  --grey: #5E5E5E;
-  --orange: #F45922;
-  --dark-blue: #000721;
-  --blue: #1A42D6;
-}
+@import '_aviator';
+@import '_tiger';
 
 body{
   position: relative;
@@ -26,44 +18,6 @@ body{
   }
 }
 
-.page__home{
-  position: relative;
-  @media(max-width:767px){
-    overflow: hidden;
-  }
-  &:before{
-    content: "";
-    background: url(@/assets/bg-px.jpg) repeat;
-    position: absolute;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 50px;
-    height: 100%;
-    @media(min-width:768px){
-      width: 13.3%;
-    }
-  }
-  .circule{
-    width: res(100, 300);
-    height: res(100, 300);
-    border-radius: 50%;
-    background: var(--red);
-    filter: blur(100px);
-    position: fixed;
-    top: 25%;
-    left: 0;
-    animation: circule 40s infinite;
-    @media(min-width:768px){
-      filter: blur(175px);
-    }
-    &-second{
-      top: 0;
-      left: 0;
-      animation: circuleSecond 35s infinite 5s;
-    }
-  }
-}
 @keyframes circule {
   25%, 75%{
     width: res(70, 200);
@@ -73,6 +27,7 @@ body{
     transform: translateX(-100%);
   }
 }
+
 @keyframes circuleSecond {
   25%, 75%{
     width: 200px;
@@ -92,9 +47,6 @@ a{
   &:hover{
     text-decoration: none;
   }
-}
-
-main{
 }
 
 .container{
@@ -135,7 +87,6 @@ main{
   text-transform: uppercase;
 }
 
-
 .text{
   &-red{
     color: var(--red);
@@ -144,7 +95,6 @@ main{
     color: var(--orange);
   }
 }
-
 
 .box{
   border-radius: 25px;
@@ -174,61 +124,5 @@ p{
   display: block;
   @media(min-width:768px){
     display: inline-block;
-  }
-}
-
-.page__tiger{
-  background: var(--dark-blue);
-  overflow: hidden;
-  .box{
-    border: none;
-    padding: 0;
-  }
-  .btn{
-    background-color: var(--orange);
-  }
-}
-
-.tns{
-  &-outer{
-    width: 100%;
-  }
-  &-nav{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30px;
-    button{
-      width: 13px;
-      height: 13px;
-      border-radius: 50%;
-      background: #2F2F2F;
-      padding: 0;
-      margin: 0 5px;
-      border: none;
-      &.tns-nav-active{
-        background-color: #F45922;
-      }
-    }
-  }
-  &__btn{
-    padding: 0;
-    background: none;
-    border: none;
-    position: absolute;
-    bottom: 0;
-    z-index: 5;
-    *{
-      pointer-events: none;
-    }
-    svg path{
-      fill: var(--red);
-    }
-    &-prev{
-      left: 10px;
-    }
-    &-next{
-      right: 10px;
-    }
   }
 }

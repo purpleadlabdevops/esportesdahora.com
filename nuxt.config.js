@@ -25,19 +25,19 @@ export default {
       {
         name: 'author-link',
         content: 'https://t.me/maxgloba_dev',
+      },
+      {
+        name: "facebook-domain-verification",
+        content: "skz4zqo0d1ytxn8hgp2wts2f334p42",
       }
     ],
     link: [
       { rel: 'icon', type: 'image/png', href: '/favicon.png' },
-      { rel: "preconnect", href: "https://fonts.googleapis.com" },
-      { rel: "preconnect", href: "https://fonts.gstatic.com", crossorigin: true },
-      { href: "https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700;800;900&display=swap", rel: "stylesheet" },
     ],
   },
   styleResources: {
     scss: ['~/styles/_functions.scss']
   },
-  css: ['~/styles/global.scss'],
   plugins: [
     { src: '~/plugins/vue-tiny-slider.js' }
   ],
