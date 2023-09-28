@@ -1,0 +1,39 @@
+@import '_functions';
+@import '_reset';
+
+// font-family: 'Poppins', sans-serif;
+// font-family: 'Titillium Web', sans-serif;
+
+.body__casino{
+  background: #fff;
+  color: #70727B;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.44;
+  *{
+    font-family: 'Poppins', sans-serif;
+  }
+
+  a{
+    &:hover{
+      text-decoration: none;
+    }
+  }
+
+  .container{
+    max-width: 1160px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: res(10, 15);
+    padding-right: res(10, 15);
+    position: relative;
+  }
+
+  p{
+    &:not(:last-child){
+      margin-bottom: 15px;
+    }
+  }
+}

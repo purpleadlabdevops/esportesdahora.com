@@ -10,6 +10,9 @@ export default{
   name: 'presell',
   head() {
     return {
+      bodyAttrs: {
+        class: 'body__presell'
+      },
       link: [
         { rel: "preconnect", href: "https://fonts.googleapis.com" },
         { rel: "preconnect", href: "https://fonts.gstatic.com", crossorigin: true },
