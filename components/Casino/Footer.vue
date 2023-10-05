@@ -16,10 +16,16 @@
   background: #212121;
   .container{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding-top: 20px;
     padding-bottom: 20px;
+    @media(max-width:767px){
+      flex-direction: column;
+    }
+    @media(min-width:768px){
+      justify-content: space-between;
+    }
   }
   a{
     text-decoration: none;
@@ -34,7 +40,12 @@
   }
   li{
     &:not(:first-child){
-      margin-left: 30px;
+      margin-left: res(10, 30);
+    }
+  }
+  img{
+    @media(max-width:767px){
+      margin-bottom: 15px;
     }
   }
 }

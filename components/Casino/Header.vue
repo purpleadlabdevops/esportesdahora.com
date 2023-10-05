@@ -16,12 +16,21 @@
   .container{
     display: flex;
     align-items: center;
+    @media(max-width:767px){
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   }
   &__jr{
-    margin-left: auto;
+    @media(min-width:768px){
+      margin-left: auto;
+    }
   }
   img{
     display: block;
+    @media(max-width:767px){
+      margin-bottom: 10px;
+    }
     &:not(:last-child){
       margin-right: 15px;
     }

@@ -32,8 +32,14 @@
   &__images{
     display: flex;
     align-items: center;
+    @media(max-width:767px){
+      justify-content: center;
+    }
     img{
       margin-right: 5px;
+      @media(max-width:767px){
+        margin-right: 15px;
+      }
     }
   }
 }

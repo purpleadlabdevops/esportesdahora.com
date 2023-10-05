@@ -2,7 +2,7 @@
   <section class="banner">
     <div class="container">
       <h1>Melhores <span>sites de apostas</span> do Brasil</h1>
-      <p>Confira abaixo o <b>Top 10</b> dos <b>Melhores Sites de Apostas</b> para brasileiros. Os <b>Melhores Bônus</b> estão aqui, acesse e escolha seu preferido.</p>
+      <p>Confira abaixo os <b>Top 5 Melhores sites de apostas do Brasil</b> hoje. Aproveite que temos os <b>melhores Bônus do mercado</b>.</p>
     </div>
   </section>
 </template>
